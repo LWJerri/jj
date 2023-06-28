@@ -19,5 +19,5 @@ services:
       - PORT=3005
       - EXPIRES_IN=1h
       - SECRET=MY_SECRET_KEY
-      - DB_URL=mongodb+srv://me:G5mOGmSa71tSBrdX@cluster.5atjtwj.mongodb.net/jj
+      - DB_URL=mongodb+srv://user:pass@host/db
     restart: "no"
