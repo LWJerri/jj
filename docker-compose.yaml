@@ -1,0 +1,23 @@
+version: "3.1"
+services:
+  frontend:
+    build:
+      context: ./apps/frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    restart: "no"
+  backend:
+    build:
+      context: ./apps/backend
+      dockerfile: Dockerfile
+    ports:
+      - "3005:3005"
+    environment:
+      - PORT=3005
+      - EXPIRES_IN=1h
+      - SECRET=MY_SECRET_KEY
+      - DB_URL=mongodb+srv://me:G5mOGmSa71tSBrdX@cluster.5atjtwj.mongodb.net/jj
+    restart: "no"

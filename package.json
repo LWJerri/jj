@@ -1,0 +1,19 @@
+{
+  "name": "jj",
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "backend:dev": "pnpm --filter=@jj/backend dev",
+    "backend:build": "pnpm --filter=@jj/backend build",
+    "backend:start": "pnpm --filter=@jj/backend production",
+    "frontend:dev": "pnpm --filter=@jj/frontend dev",
+    "frontend:build": "pnpm --filter=@jj/frontend build",
+    "frontend:start": "pnpm --filter=@jj/frontend start"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "prettier": "^2.8.8"
+  }
+}
