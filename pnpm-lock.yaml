@@ -85,8 +85,8 @@ importers:
         specifier: ^3.1.1
         version: 3.1.1(react-hook-form@7.45.2)
       '@tanstack/react-form':
-        specifier: ^0.0.12
-        version: 0.0.12(react-dom@18.2.0)(react@18.2.0)
+        specifier: ^0.0.14
+        version: 0.0.14(react-dom@18.2.0)(react@18.2.0)
       '@types/node':
         specifier: 20.5.7
         version: 20.5.7
@@ -633,14 +633,14 @@ packages:
       tslib: 2.6.1
     dev: false
 
-  /@tanstack/form-core@0.0.12:
-    resolution: {integrity: sha512-bkrypO6VT9pf43lfFPDLaLeJxUEI1hnlcMZjRbG2FWNq1jrJV1Ib0e6KUsmWDOaBJM4j4gZrsYUTwjMkgfedHQ==}
+  /@tanstack/form-core@0.0.14:
+    resolution: {integrity: sha512-Bs6PHo9kPyxo8Prd3e7GEo8oPAC8WR3yaxKdovI8YvpNIIeRlZEp9yZBlZWqe8yzT22EboAFaFTDm621+Dy5DA==}
     dependencies:
       '@tanstack/store': 0.0.1-beta.89
     dev: false
 
-  /@tanstack/react-form@0.0.12(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-Wx4Gr1Xkhsi3OCv4wqZvdwcW6Lb1kyi+k3tb+YCyGtZNgR3RNY8C+RZgAmLQVULt2EjI/qMKLILFNsGq2EthvQ==}
+  /@tanstack/react-form@0.0.14(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-zfSltOgHHuF+2qMCw+febulgZ8/18FqEiKAorIadj2TBRglR+gi6YrOcM4T/RTxJ/zOy2nhhHF5IOryG7RZIdA==}
     peerDependencies:
       react: ^17.0.0 || ^18.0.0
       react-dom: ^17.0.0 || ^18.0.0
@@ -651,7 +651,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@tanstack/form-core': 0.0.12
+      '@tanstack/form-core': 0.0.14
       '@tanstack/react-store': 0.0.1-beta.85(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
