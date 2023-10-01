@@ -15,9 +15,16 @@ services:
       dockerfile: Dockerfile
     ports:
       - "3005:3005"
+    depends_on:
+      - mongodb
     environment:
       - PORT=3005
       - EXPIRES_IN=1h
       - SECRET=MY_SECRET_KEY
-      - DB_URL=mongodb+srv://user:pass@host/db
+      - DB_URL=mongodb://mongodb:27017/jj
+    restart: "no"
+  mongodb:
+    image: mongo
+    ports:
+      - "27017:27017"
     restart: "no"
