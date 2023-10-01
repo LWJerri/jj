@@ -8,7 +8,10 @@ const { SECRET, EXPIRES_IN } = process.env;
 
 @Injectable()
 export class AuthService {
-  constructor(private UserService: UserService, private jwtService: JwtService) {}
+  constructor(
+    private UserService: UserService,
+    private jwtService: JwtService,
+  ) {}
 
   async signIn({ username, password }: AuthorizationDto) {
     const findUser = await this.UserService.findOne(username);
